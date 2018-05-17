@@ -15,7 +15,9 @@
  *= require_self
  *= require font-awesome
  */
-
+.label-defauls {
+  background-color: #808080;
+}
 .results-block {
   display: inline-block;
 }

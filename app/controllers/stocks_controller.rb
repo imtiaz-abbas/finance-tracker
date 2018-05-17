@@ -1,6 +1,6 @@
 class StocksController < ApplicationController
   def search
-
+    @current_user = current_user
     if params[:stock].blank?
       flash.now[:danger] = "You have entered empty search string"
     else
