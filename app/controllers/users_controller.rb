@@ -3,6 +3,12 @@ class UsersController < ApplicationController
     @user = current_user
     @user_stocks = current_user.stocks
   end
+
+  def show
+    @user = User.find(params[:id])
+    @user_stocks = @user.stocks
+  end
+
   def my_friends
     @friendships = current_user.friends
   end
